@@ -40,7 +40,7 @@ const { title } = require("process");
 const { version } = require("os");
 
 const corsOption = {
-  origin: "https://educatsygui.onrender.com/",
+  origin: "https://educatsy-two.vercel.app/",
   method: "GET POST PUT DELETE HEAD PATCH",
   credentials: true,
 };

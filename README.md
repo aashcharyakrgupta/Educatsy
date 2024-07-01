@@ -80,7 +80,7 @@ npm start
 ```
 - Open the application in your browser: 
 ```bash 
-https://educatsygui.onrender.com/
+https://educatsy-two.vercel.app/
 ```
 ## API Documentation
 
