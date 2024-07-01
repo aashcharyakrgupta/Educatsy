@@ -40,7 +40,7 @@ const { title } = require("process");
 const { version } = require("os");
 
 const corsOption = {
-  origin: "https://educatsy-virid.vercel.app/",
+  origin: "*",
   method: "GET POST PUT DELETE HEAD PATCH",
   credentials: true,
 };
