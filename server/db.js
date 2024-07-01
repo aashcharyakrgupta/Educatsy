@@ -1,7 +1,7 @@
 /* LMS database */
 
 const mongoose = require("mongoose");
-const mongoURI = "mongodb://127.0.0.1:27017/Educatsy";
+const mongoURI = "mongodb+srv://aashcharyakumargupta:aeiou0aeiou@cluster.v4veomf.mongodb.net/";
 const connectDB = async () => {
 
   try {
