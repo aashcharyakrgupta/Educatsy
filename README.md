@@ -98,7 +98,6 @@ http://localhost:5000/api-docs
 |--controllers\    # Route controllers (controller layer)
 |--Frontend\       # Frontend
 |--models\         # Mongoose models (data layer)
-|--node_modules    # Node_modules
 |--routes\         # Routes
 |--db.js           # MongoDB Connection
 |--package-lock.json   #json package
