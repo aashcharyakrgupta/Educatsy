@@ -5,7 +5,7 @@ Educatsy is a powerful learning management system (LMS) web application built us
 
 ## Authors
 
-   **Training Project (DAMS)**
+   **Training Project (DAMS 4th Semester)**
 
 - **Aashcharya Kumar Gupta**
   <!-- - Roll Number: 22015002225 -->
@@ -19,14 +19,12 @@ https://deepak-cell311.github.io/Educatsy/
 ```
 
 ## Screenshots
-![Screenshot 2024-06-29 205155](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/ab27411f-5f5d-4b5c-8067-7a14b5eabf21)
 
-![Screenshot 2024-06-29 205224](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/0692a45f-fdaa-416a-8231-63bbd30062c3)
-
-![Screenshot 2024-06-29 205729](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/30984921-0c01-43ca-9733-fa0ecae05729)
-
-![Screenshot 2024-06-29 205806](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/6c697dc9-779e-404b-a283-ebaa8c125a1f)
-
+![Screenshot 2024-07-01 142104](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/1b531fd2-1ed0-483c-83a6-f62c192cf4ab)
+![Screenshot 2024-07-01 142136](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/385f8949-2003-46ae-833a-7b4f31a6b623)
+![Screenshot 2024-07-01 142123](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/9652fa69-9389-4e92-a5f9-36dad6537e52)
+![Screenshot 2024-07-01 142314](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/e47a3f61-9f4b-46dc-9562-3eb7b509baab)
+![Screenshot 2024-07-01 142355](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/fea9a166-b3be-4d75-96b5-0b8a84e57c33)
 
 ## Features
 
@@ -91,9 +89,7 @@ http://localhost:3000
 ```bash
 http://localhost:5000/api-docs
 ```
-
-![Screenshot 2024-06-30 135602](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/e47cfad0-d355-468f-a210-778c875b692d)
-
+![Screenshot 2024-06-30 135602](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/d0459726-f8e6-4894-8cd5-dc77bdd7c231)
 
 
 ## Structure of Backend
