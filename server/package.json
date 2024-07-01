@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"nodemon server.js\" \"npm run Frontend\"",
-    "start": "concurrently \"cd client && npm i && npm start\" \"node server\""
+    "build":"concurrently \"npm i axios express bcrypt bcryptjs cors dotenv express-async-handler sonwebtoken mongoose swagger-jsdoc swagger-ui-express\"",
+    "start": "concurrently \"cd client && npm i axios react react-dom react-hook-form react-hot-toast react-router-dom react-scripts react-toastify react-youtube web-vitals && npm start\" \"node server\""
   },
   "keywords": [],
   "author": "",
