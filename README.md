@@ -80,7 +80,7 @@ npm start
 ```
 - Open the application in your browser: 
 ```bash 
-https://educatsy-two.vercel.app/
+https://educatsy-virid.vercel.app/
 ```
 ## API Documentation
 
