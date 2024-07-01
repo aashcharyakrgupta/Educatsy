@@ -80,14 +80,14 @@ npm start
 ```
 - Open the application in your browser: 
 ```bash 
-http://localhost:3000
+https://educatsygui.onrender.com/
 ```
 ## API Documentation
 
 - For API documentation Open url:
 
 ```bash
-http://localhost:5000/api-docs
+https://educatsy.onrender.com/api-docs
 ```
 ![Screenshot 2024-06-30 135602](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/d0459726-f8e6-4894-8cd5-dc77bdd7c231)
 

@@ -40,7 +40,7 @@ const { title } = require("process");
 const { version } = require("os");
 
 const corsOption = {
-  origin: "http://localhost:3000",
+  origin: "https://educatsygui.onrender.com/",
   method: "GET POST PUT DELETE HEAD PATCH",
   credentials: true,
 };
