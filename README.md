@@ -15,7 +15,7 @@ Educatsy is a powerful learning management system (LMS) web application built us
 ## Deployement
 
 ```bash
-https://deepak-cell311.github.io/Educatsy/
+https://educatsy-virid.vercel.app
 ```
 
 ## Screenshots
@@ -80,7 +80,7 @@ npm start
 ```
 - Open the application in your browser: 
 ```bash 
-https://educatsy-virid.vercel.app/
+https://localhost:3000
 ```
 ## API Documentation
 
