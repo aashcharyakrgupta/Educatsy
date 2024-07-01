@@ -1,0 +1,11 @@
+.resources{
+     position: relative;
+     margin: 10rem 10rem;
+     display: flex;
+     gap: 2rem;
+}
+.link{
+     color: black;
+     font-size: 2rem;
+     text-decoration: none;
+}

@@ -1,0 +1,38 @@
+/* About Us */
+
+ *{
+      color: white;
+ }
+.aboutUs {
+     position: relative;
+     color: black;
+     margin:  10rem 20rem;
+}
+.heading{
+     font-size: 5rem;
+     text-align: center;
+}
+.aboutUs p{
+     font-size: 2rem;
+     font-weight: 400;
+     margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 937px){
+     
+.aboutUs {
+
+     color: black;
+     margin:  10rem 2rem;
+}
+.heading{
+     font-size: 4rem;
+     width: 100%;
+}
+.aboutUs p{
+     font-size: 2rem;
+     font-weight: 400;
+     margin-top: 2rem 3rem;
+}
+}

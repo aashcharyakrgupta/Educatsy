@@ -1,0 +1,25 @@
+.courses {
+     color: black;
+     margin: 14rem 20rem;
+     text-align: center;
+
+}
+
+.courses h1 {
+     font-size: 5rem;
+}
+
+
+@media screen and (max-width: 937px) {
+     .courses {
+          position: relative;
+          color: black;
+          width: 100%;
+          left: -43%;
+          top:-13rem;
+     }
+     
+     .courses h1 {
+          font-size: 5rem;
+     }
+}
