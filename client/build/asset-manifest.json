@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Educatsy/static/css/main.dff7b071.css",
+    "main.js": "/Educatsy/static/js/main.469eb829.js",
+    "static/media/banner.8a9f498b.webp": "/Educatsy/static/media/banner.8a9f498b.8e645bcb9bbe0ec67ce5.webp",
+    "static/media/hand.webp": "/Educatsy/static/media/hand.5745ff4b29d635c1b4dc.webp",
+    "static/media/upstash-dark-logo.e96a691e.webp": "/Educatsy/static/media/upstash-dark-logo.e96a691e.45dc91000877f2721bfb.webp",
+    "static/media/eraser-dark-logo.0ccbd449.webp": "/Educatsy/static/media/eraser-dark-logo.0ccbd449.6d48c4b0e1485a6a2d32.webp",
+    "static/media/clerk-dark-logo.891b17ea.webp": "/Educatsy/static/media/clerk-dark-logo.891b17ea.650a589ba545267385b3.webp",
+    "index.html": "/Educatsy/index.html",
+    "main.dff7b071.css.map": "/Educatsy/static/css/main.dff7b071.css.map",
+    "main.469eb829.js.map": "/Educatsy/static/js/main.469eb829.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dff7b071.css",
+    "static/js/main.469eb829.js"
+  ]
+}
