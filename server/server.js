@@ -5,12 +5,15 @@ const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
 const path = require("path");
+const dotenv = require("dotenv");
 const swaggerJSDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
+
+const PORT = process.env.PORT || 5000;
 
 const swaggerOptions={
   definition:{openapi:"3.0.0",
@@ -54,7 +57,7 @@ try {
     })
     .then(() => {
       console.log("Connected to MongoDB");
-      app.listen(5000, () => console.log("Server running on port 5000"));
+      app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
     })
     .catch((err) => {
       console.error("Could not connect to MongoDB:", err)
