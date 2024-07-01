@@ -23,7 +23,7 @@ const swaggerOptions={
     description:"Swagger intigration with Node.js"
   },
   servers:[{
-    url:`http://localhost:5000`
+    url:`http://localhost:${PORT}`
   }]},
   apis:["./routes/*.js"]
 };

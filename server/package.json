@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"nodemon server.js\" \"npm run Frontend\"",
-    "start": "concurrently \"cd client && npm start\" \"node server\""
+    "start": "concurrently \"cd client && npm i && npm start\" \"node server\""
   },
   "keywords": [],
   "author": "",
