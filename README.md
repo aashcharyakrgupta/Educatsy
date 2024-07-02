@@ -89,30 +89,31 @@ https://localhost:3000
 ```bash
 https://educatsy.onrender.com/api-docs
 ```
+
 ![Screenshot 2024-06-30 135602](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/d0459726-f8e6-4894-8cd5-dc77bdd7c231)
 
 
-## Structure of Backend
+## Structure of server
 
 ```bash
-|--controllers\    # Route controllers (controller layer)
-|--Frontend\       # Frontend
-|--models\         # Mongoose models (data layer)
-|--routes\         # Routes
-|--db.js           # MongoDB Connection
-|--package-lock.json   #json package
-|--package.json      #json package
-|--server.js          # Express app
-|--yarn.lock       # yarn
+|--controllers\   
+|--models\       
+|--public\     
+|--routes\         
+|--db.js           
+|--package-lock.json   
+|--package.json     
+|--server.js         
+|--yarn.lock       
 
 ```
 
-## Structure of Frontend
+## Structure of client
 
 ```bash
-|--build                 
-|--public
-|--src
+|--build\           
+|--public\
+|--src\
 |--.gitnore
 |--package-lock.json
 |--package.json
