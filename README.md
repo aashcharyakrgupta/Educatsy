@@ -111,7 +111,6 @@ https://educatsy.onrender.com/api-docs
 
 ```bash
 |--build                 
-|--node_modules
 |--public
 |--src
 |--.gitnore
