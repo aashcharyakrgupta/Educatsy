@@ -23,7 +23,7 @@ const swaggerOptions={
     description:"Swagger intigration with Node.js"
   },
   servers:[{
-    url:`http://localhost:${PORT}`
+    url:`https://educatsy.onrender.com/`
   }]},
   apis:["./routes/*.js"]
 };
