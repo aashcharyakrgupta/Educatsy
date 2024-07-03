@@ -43,7 +43,7 @@ https://educatsy-virid.vercel.app
 
 ## Tech Stack
 
-- **Frontend:** React, Redux, Axios, React-dom, React-hook-form, React-hot-toast, React-router-dom, React-scripts, React-toastify, React-youtube, Web-vitals.
+- **Frontend:** React, Axios, React-dom, React-hook-form, React-hot-toast, React-router-dom, React-scripts, React-toastify, React-youtube, Web-vitals.
 
 - **Backend:** Node, Express, Axios, Bcrypt, Bcryptjs, Cors, Dotenv, Express-async-handler, Jsonwebtoken, Mongoose, Swagger-jsdoc, Swagger-ui-express, Concurrently, Nodemon, Yarn.
 
