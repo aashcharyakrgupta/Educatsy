@@ -45,7 +45,7 @@ const corsOption = {
   credentials: true,
 };
 app.use(cors(corsOption));
-const mongoURI = "mongodb+srv://aashcharyakumargupta:aeiou0aeiou@cluster.v4veomf.mongodb.net/";
+const mongoURI = process.env.MONGO_URI ;
 /* MongoDB setup */
 
 
