@@ -64,6 +64,10 @@ https://github.com/aashcharyakrgupta/Educatsy
                     OR
 https://github.com/Deepak-cell311/Educatsy
 ```
+- Create a Environment Variable File(In This File):
+```bash
+MONGO_URI = mongodb+srv://<username>:<password>@beyondthebasics.abcde.mongodb.net/test; 
+```
 - Install dependencies: 
 ``` bash
 cd server && npm install
