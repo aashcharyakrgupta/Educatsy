@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
 const PORT = process.env.PORT || 5000;
+dotenv.config();
 
 const swaggerOptions={
   definition:{openapi:"3.0.0",
@@ -45,37 +46,28 @@ const corsOption = {
   credentials: true,
 };
 app.use(cors(corsOption));
-const mongoURI = process.env.MONGO_URI ;
-/* MongoDB setup */
 
+mongoose
+    .connect(process.env.MONGO_URL, {})
+    .then(console.log("Connected to MongoDB"))
+    .catch((err) => console.log("NOT CONNECTED TO NETWORK", err))
+    
+app.listen(PORT, () => {
+  console.log(`Server started at port no. ${PORT}`)
+})
 
-try {
-  mongoose
-    .connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .then(() => {
-      console.log("Connected to MongoDB");
-      app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-    })
-    .catch((err) => {
-      console.error("Could not connect to MongoDB:", err)
-      process.exit(1)
-    });
-
-} catch (err) {
-  console.log("Error : " + err.message)
-}
-
-app.get("/", (req, res) => {
-  res.send("Api is running.....");
-});
 app.use((req, res, next) => {
   console.log(`Received request: ${req.method} ${req.url}`);
   next();
 });
+
+
+app.get("/", (req, res) => {
+  res.send("Api is running.....");
+});
+
+
 app.use("/api/user", userRoute); // /user/signup -----> signup is comming from the user controller
 app.use("/api/form", contactRoute); 
-app.use("/api/course", courseRoute)
-app.use('*', (req, res) => {res.sendFile(path.join(__dirname, 'public', 'index.html'))});
+app.use("/api/course", courseRoute);
+
