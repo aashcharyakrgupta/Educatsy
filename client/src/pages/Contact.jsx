@@ -41,7 +41,7 @@ const handleSubmit = async (e) => {
   e.preventDefault()
   console.log("this is e: ", e);
   try {
-    const response = await axios.post("/api/form/contact", contact)
+    const response = await axios.post("https://educatsy.onrender.com/api/form/contact", contact)
     if (response.status === 200) {
       setContact(authUser ? { ...contact, message: "" } : defaultContactForm);
       toast.success("Form Submitted Successfully")
