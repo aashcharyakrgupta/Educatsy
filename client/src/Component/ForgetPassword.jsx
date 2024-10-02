@@ -31,7 +31,7 @@ const ForgetPassword = () => {
     
     try {
     
-      const response = await fetch('*/api/user/reset-password', {
+      const response = await fetch('https://educatsy.onrender.com/api/user/reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

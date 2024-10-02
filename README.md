@@ -103,8 +103,7 @@ https://educatsy.onrender.com/api-docs
 |--controllers\   
 |--models\       
 |--public\     
-|--routes\         
-|--db.js           
+|--routes\                  
 |--package-lock.json   
 |--package.json     
 |--server.js         
@@ -115,7 +114,6 @@ https://educatsy.onrender.com/api-docs
 ## Structure of client
 
 ```bash
-|--build\           
 |--public\
 |--src\
 |--.gitnore

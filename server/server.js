@@ -34,7 +34,7 @@ const swaggerspec= swaggerJSDoc(swaggerOptions);
 app.use("/api-docs",swaggerUi.serve,swaggerUi.setup(swaggerspec));
 
 const corsOption = {
-  origin: ['*'],
+  origin: ['https://localhost:3000','https://educatsy-1.vercel.app'],
   method: ["GET POST PUT DELETE HEAD PATCH"],
   credentials: true,
 };

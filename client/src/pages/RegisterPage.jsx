@@ -18,7 +18,7 @@ const RegisterPage = () => {
   const onSubmit = async (data) => {
 
     try {
-      const response = await axios.post("*/api/user/signup", {
+      const response = await axios.post("https://educatsy.onrender.com/api/user/signup", {
         username: data.username,
         email: data.email,
         password: data.password,
