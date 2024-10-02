@@ -18,7 +18,7 @@ function Courses() {
   useEffect(() => {
     const getCourse = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/course`)
+        const response = await axios.get(`*/api/course`)
         setCourses(response.data.map(course => ({...course, rating: 0})))
       } catch (error) {
         console.log(error);

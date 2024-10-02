@@ -26,7 +26,7 @@ const swaggerOptions={
     description:"Swagger intigration with Node.js"
   },
   servers:[{
-    url:`https://educatsy-1.onrender.com/`
+    url:`https://educatsy.onrender.com/`
   }]},
   apis:["./routes/*.js"]
 };
@@ -34,7 +34,7 @@ const swaggerspec= swaggerJSDoc(swaggerOptions);
 app.use("/api-docs",swaggerUi.serve,swaggerUi.setup(swaggerspec));
 
 const corsOption = {
-  origin: ['http://localhost:3000'],
+  origin: ['*'],
   method: ["GET POST PUT DELETE HEAD PATCH"],
   credentials: true,
 };

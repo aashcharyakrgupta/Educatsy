@@ -12,7 +12,7 @@ function CourseDetail() {
     const fetchCourse = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/course/${id}`
+          `*/api/course/${id}`
         );
         setCourse(response.data)
       } catch (err) {
