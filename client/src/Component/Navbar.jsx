@@ -1,37 +1,53 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useAuth } from "../context/authprovider"
 import Logout from "./Logout"
-function Navbar() {
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
-     const [setNav, isSetNav] = useState(0)
+function NavBar() {
+
      const [authUser] = useAuth()
      console.log(authUser);
+
+     const [isDarkMode, setIsDarkMode] = useState(true);
+
+     const handleToggleDarkMode = () => {
+          setIsDarkMode(!isDarkMode);
+     };
+     useEffect(() => {
+          document.body.classList.toggle('dark', isDarkMode);
+     }, [isDarkMode]);
      return (
           <>
-               <nav className="navigation d-flex justify-content-between">
-                    <div className="logo">
+               <Navbar expand="lg" className="text-white fs-1 fixed-top transparent" bg="dark" >
+                    <Container className="text-white">
+                         <Navbar.Toggle aria-controls="basic-navbar-nav shadow-none text-white" />
+                         <Navbar.Brand href="/Home" className="text-white fs-1" animation="glow">Educatsy</Navbar.Brand>
+                         <Navbar.Collapse id="basic-navbar-nav justify-content-between">
+                              <Nav className="me-auto m-auto text-white">
+                                   <Nav.Link href="/Home" className="text-white fs-2">Home</Nav.Link>
+                                   <Nav.Link href="/AboutUs" className="text-white fs-2">About</Nav.Link>
+                                   <Nav.Link href="/Courses" className="text-white fs-2">Courses</Nav.Link>
+                                   <Nav.Link href="/Contact" className="text-white fs-2">Contact</Nav.Link>
+                              </Nav>
+                         </Navbar.Collapse>
+                         <div className="d-flex flex-end">
+                              <section className="d-flex align-items-center mx-5">
+                                   <i className={`fa fa-moon ${isDarkMode ? 'd-none' : ''}`} onClick={handleToggleDarkMode}></i>
+                                   <i className={`fa fa-sun ${isDarkMode ? '' : 'd-none'}`} onClick={handleToggleDarkMode}></i>
+                              </section>
+                              <form className="navbar-form">
+                                   {
+                                        authUser ? <Logout /> : <Link to="/login"><button className="btn btn-warning " type="submit">Login</button></Link>
+                                   }
+                              </form>
 
-                         <Link to="/" className="logo-name" >Educatsy</Link>
-
-                         {["Home", "About Us", "Courses", "Contact"].map((item, index) => (
-                               <li style={{listStyle: "none", padding:"2.5rem", color: "white"}} key={index} onClick={() => isSetNav(index)} className={`${index === setNav ? "active" : ""} list-none`}>
-                                  <Link className="text-white text-decoration-none" to={`/${item.replace(/\s+/g, '')}`}>{item}</Link>
-                                  </li>
-                              
-                         ))}
-
-                    </div>
-
-                    <form className=" navbar-form d-flex justify-content-between " action="">
-                         {
-                              authUser ? <Logout /> : <Link to="/login"><button className="btn btn-warning" type="submit">Login</button></Link>
-                         }
-                    </form>
-               </nav>
+                         </div>
+                    </Container>
+               </Navbar>
           </>
      )
 }
 
-export default Navbar
+export default NavBar

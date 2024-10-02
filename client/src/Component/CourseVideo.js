@@ -13,7 +13,6 @@ function CourseVideo({ videoId }) {
   return (
     <>
       <div>
-
         <div>
         </div>
         <YouTube videoId={videoId} opts={opts} />

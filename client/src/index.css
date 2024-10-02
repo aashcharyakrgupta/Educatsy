@@ -7,14 +7,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 body,
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  background-color: rgb(24, 24, 24);
-  color: white;
+  /* background: linear-gradient(45deg, rgb(214, 74, 74), rgb(81, 81, 245)); */
+  /* background-color: rgb(101, 208, 250); */
+  color: black;
 
 
 }
@@ -34,10 +36,10 @@ html {
   padding: 0rem 6rem;
 }
 
-.navbar-form .btn{
+/* .navbar-form .btn {
   width: 90%;
-  margin: 2rem;
-}
+  margin: 3rem;
+} */
 
 
 .logo {
@@ -47,7 +49,8 @@ html {
   font-weight: 900;
   text-decoration: none;
 }
-.logo-name{
+
+.logo-name {
   padding: 1.5rem;
   text-decoration: none;
   color: white;
@@ -55,10 +58,14 @@ html {
 
 }
 
+a {
+  text-decoration: none;
+}
 
-.go3958317564{
+.go3958317564 {
   font-size: 2rem;
 }
+
 ul {
   display: flex;
   align-items: center;
@@ -70,6 +77,7 @@ ul {
 ul li {
   list-style: none;
 }
+
 ul li a:active {
   color: red;
   background-color: green;
@@ -80,7 +88,7 @@ ul li a {
   padding: 0 1rem;
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .main-card {
@@ -93,19 +101,22 @@ ul li a {
   place-content: center;
   text-decoration: none;
   color: black;
+  margin: auto;
+  
 }
 
 .card {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  background-color:#0F1316;
+  background-color: #0F1316;
   border-radius: 2rem;
+  margin: auto;
 }
 
-.fa-star{
+.fa-star {
   font-size: 2rem;
-    color: rgb(87, 87, 87);
+  color: rgb(87, 87, 87);
 
 }
 
@@ -119,11 +130,11 @@ ul li a {
 }
 
 .card-poster img {
-  height: 25rem;
+  height: auto;
   width: 27rem;
   margin: 0rem auto;
   border-radius: 2rem;
-  object-fit: cover;
+  object-fit: fill;
   aspect-ratio: 3/2;
 
 }
@@ -139,15 +150,16 @@ ul li a {
   margin-bottom: 2rem;
   color: white;
 }
+
 .card-poster a:hover {
   color: #e9a908;
 }
 
-.filled-star{
+.filled-star {
   color: #e9a908
 }
 
-.rating{
+.rating {
   display: flex;
   justify-content: space-around;
   color: white;
@@ -157,7 +169,7 @@ ul li a {
 
 }
 
-.rating ul{
+.rating ul {
   margin: 0;
   padding: 0;
 }
@@ -240,9 +252,45 @@ ul li a {
 }
 
 .btn {
-  border-radius: 5rem;
+  /* border-radius: 5rem; */
   font-size: 2rem;
-  width: 50%;
+  /* width: 50%; */
+}
+
+/*============================================ Dark Mode CSS =====================================================*/
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Specific Dark Mode Overrides */
+body.dark .navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Ensure dark mode colors are applied properly */
+body.dark .text-light {
+  color: #e0e0e0;
+}
+
+body.dark .bg-dark {
+  background-color: #1e1e1e;
+}
+
+.dark .form-detail-contact{
+  color: white;
+}
+
+/*==================================================================================================================*/
+
+.fade-transition {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-transition.show {
+  opacity: 1;
 }
 
 .social-icon {
@@ -403,6 +451,27 @@ ul li a {
   justify-content: center;
 }
 
+video{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 176%;
+  left: 26%;
+  right: 36%;
+  width: 49%;
+  height: 40%;
+}
+
+.modal-close i{
+    position: absolute;
+    top: 177%;
+    color: white;
+    left: 73%;
+    z-index: 1;
+    font-size: 2rem;
+}
+
 .fa-circle-play {
   margin: 2rem;
   font-size: 5rem;
@@ -504,6 +573,7 @@ ul li a {
 
 .marquee-content img {
   object-fit: contain;
+  filter: invert(1);
 }
 
 .marquee-main h1 {
@@ -516,7 +586,7 @@ ul li a {
   background-size: contain;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+
 }
 
 
@@ -545,32 +615,37 @@ ul li a {
 
 /* Contact form Css */
 
-.flex-main{
+.flex-main {
   display: flex;
   margin: 10rem;
   font-size: 30rem;
   justify-content: space-between;
 }
+
 .form-input {
   padding-bottom: 4rem;
-  color: black;
 }
-.form-detail h1{
+
+.form-detail h1 {
   font-size: 5rem;
   margin-top: 5rem
 }
-.form-detail-contact h1{
+
+.form-detail-contact h1 {
   font-size: 5rem;
   margin-top: 5rem
 }
+
 .form-detail {
   width: 50%;
 }
+
 .form-detail-contact {
   width: 80%;
 }
+
 .form-detail-para {
- font-size: 2rem;
+  font-size: 2rem;
 }
 
 .contact-icons a {
@@ -597,17 +672,20 @@ ul li a {
   padding: 1rem;
 }
 
-.envelop{
+.envelop {
   margin-left: 0rem;
 }
-.fa-envelop{
+
+.fa-envelop {
   margin: 0;
 }
 
-form{
+form {
   font-size: 2rem;
 }
-.form-input input, textarea{
+
+.form-input input,
+textarea {
   outline: none;
   padding: 1rem;
   background-color: #efeeef;
@@ -621,29 +699,36 @@ form{
 /* 404 page css*/
 
 
-.page-error{
+.page-error {
   margin-top: 10rem;
 }
-.page-error span{
+
+.page-error span {
   font-size: 2rem;
 }
-.page-error p{
+
+.page-error p {
   font-size: 1.5rem;
 }
 
-.btn-success{
+.btn-success {
   width: 100%;
   padding: 1rem;
 }
 
 
-.video{
+.video {
   margin: 10rem 10rem;
 }
 
 
+.mobile-navbar {
+  display: none;
+}
 
-
+.form-detail-contact-para{
+  font-size: 2rem
+}
 
 @media screen and (max-width: 937px) {
   html {
@@ -654,6 +739,9 @@ form{
     display: none;
   }
 
+  .navbar-element {
+    display: none;
+  }
 
   .heading {
     font-size: 2rem;
@@ -746,10 +834,10 @@ form{
     width: 100%;
   }
 
-  .btn {
+  /* .btn {
     border-radius: 5rem;
     font-size: 2rem;
-  }
+  } */
 
   .home {
     flex-direction: column;
@@ -761,9 +849,9 @@ form{
   .text {
     display: flex;
     flex-direction: column;
-    padding: 0 4rem;
+/*     padding: 0 4rem; */
     line-height: 1.6rem;
-    width: 43rem;
+/*     width: 43rem; */
   }
 
   .home-heading {
@@ -771,14 +859,17 @@ form{
     font-size: 3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    width: 35rem;
+/*     width: 35rem; */
     line-height: 5rem;
+    text-align: center;
 
   }
 
   .home-para {
     font-size: 1.6rem;
-    margin: 2rem 0;
+    margin: 0 4rem;  
+    text-align: center;
+    padding-bottom: 4rem;
   }
 
   .banner-image {
@@ -857,13 +948,13 @@ form{
     font-size: 2.5rem;
     position: relative;
     padding: 4rem 0;
-    bottom: 10rem;
+    bottom: 32rem;
   }
 
   .hand {
     display: block;
     position: relative;
-    top: -23rem;
+    top: -12rem;
     z-index: 1;
     width: 15rem;
     height: 15rem;
@@ -915,36 +1006,151 @@ form{
 
   /*Contact form css mobile*/
 
-  .flex-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10rem auto;
-}
-.form-detail{
-  margin-left: 0rem;
+  .flex-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10rem auto;
+  }
+
+  .form-detail {
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  .form-detail h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .form-detail-para {
+    font-size: 2rem;
+    margin: 2rem -8rem;
+  }
+
+  .contact-icons a {
+    font-size: 2rem;
+    align-items: center;
+    color: black;
+  }
+
+  .envelop {
+    margin-left: -7rem;
+
+  }
+
+  .card {
+    height: auto;
+    width: 30rem;
+    margin: auto;
+  }
+
+  .card-poster img {
+    height: auto;
+    margin: auto;
+    object-fit: fill;
+    width: 30rem;
+  }
+
+  .card-poster a {
+    font-size: 2.5rem;
+  }
+
+
+  /* Mobile Navbar */
+
+  .mobile-navbar {
+    display: block;
+  }
+
+  /* .close{
+  display: none;
+} */
+
+  .menu,
+  .close {
+    font-size: 3.5rem;
+    margin: 3rem -3rem;
+    padding-right: 4rem;
+    position: relative;
+    top: .6rem;
+    cursor: pointer;
+  }
+
+  .logo-name {
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -3rem;
+  }
+
+  .menu-list a {
+    color: white;
+    text-decoration: none;
+    margin: 3rem -2rem;
+    font-size: 2.5rem;
+  }
+
+  .navigation {
+    opacity: 1;
+  }
+
+/*   .navbar-form .btn {
+    width: 8rem;
+    margin: 3.7rem 5rem;
+    display: block;
+  } */
+
+  /* .btn-danger{
+    height: 5rem;
+    padding: 0 3rem;
+    margin-top: 3rem;
+  } */
+
+
+ .form-detail-contact h1{
   text-align: center;
-}
-.form-detail h1{
-  font-size: 4rem;
+        margin-left: 7rem;
+ }
+
+ .form-detail-para{
   text-align: center;
-}
-.form-detail-para{
-  font-size: 2rem;
- margin: 2rem -8rem;
+        width: 39rem;
+ }
+
+ .contact-icons{
+  margin-left: 8rem;
+  color: white;
 }
 
-.contact-icons a {
-  font-size: 2rem;
-  align-items: center;
-  color: black;
+ .form-input{
+  width: 40rem;
+ }
+ .form-input input{
+  width: 39rem;
+ }
+
+
+.form-detail-contact-para{
+font-size: 2rem;
+        margin: 2rem;
+        text-align: center;
+        width: 38rem;
 }
 
-.envelop{
-  margin-left: -7rem;
 
-}
+
+
+
+
 
 
 }

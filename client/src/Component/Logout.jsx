@@ -30,7 +30,7 @@ const Logout = (e) => {
 
      return (
           <>
-               <button className="logout px-20 btn btn-danger" type='button' onClick={handleLogout}> Logout</button>
+               <button className="logout btn btn-danger" type='button' onClick={handleLogout}> Logout</button>
           </>
      )
 }

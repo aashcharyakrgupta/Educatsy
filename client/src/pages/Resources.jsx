@@ -1,6 +1,5 @@
 import React from "react"
 import { useState } from "react";
-import Card from "../Component/Card";
 
 function Resources() {
   const itemContent = [
@@ -40,7 +39,7 @@ function Resources() {
           </ul>
         ))}
       </div>
-      <Card post={post} />
+      <Card/>
     </>
   );
 }

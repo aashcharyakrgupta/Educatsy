@@ -15,7 +15,7 @@ Educatsy is a powerful learning management system (LMS) web application built us
 ## Deployement
 
 ```bash
-https://educatsy-virid.vercel.app
+https://educatsy-1.vercel.app
 ```
 
 ## Screenshots
@@ -91,7 +91,7 @@ https://localhost:3000
 - For API documentation Open url:
 
 ```bash
-https://educatsy.onrender.com/api-docs
+https://educatsy-1.onrender.com/api-docs
 ```
 
 ![Screenshot 2024-06-30 135602](https://github.com/aashcharyakrgupta/Educatsy/assets/174197287/d0459726-f8e6-4894-8cd5-dc77bdd7c231)

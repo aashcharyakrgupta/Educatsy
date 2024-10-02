@@ -8,9 +8,6 @@ function HomeCard() {
                          <div>
                               <h1>10.2k</h1>
                               <p style={{ fontSize: "2rem" }}>Regitered users</p>
-                              <div>
-                                   <i className="fa-solid fa-star"></i>
-                              </div>
                          </div>
                     </div>
 

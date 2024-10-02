@@ -39,7 +39,7 @@ function Footer() {
                          <p>Stay up-to-date with everything related to our brand and gain invaluable insights for your programming journey by subscribing to our newsletter.</p>
 
                          <input className="email my-2" style={{ outline: "none", }} type="email" name="footerEmail" id="footerEmail" placeholder="Enter Your Email" /><br />
-                         <input className=" my-2 btn btn-primary" type="submit" value="Subscribe" />
+                         <input className=" my-2 btn btn-primary w-50" type="submit" value="Subscribe" />
                          
                          <p className="my-2">Copyright © 2024 Becodemy | All Rights Reserved</p>
                     </form>

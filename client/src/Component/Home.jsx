@@ -18,8 +18,6 @@ function Home() {
                <Animation />
                <HomeCard />
                <Marquee />
-               {/* {authUser ? <Courses /> : <Navigate to="/login" />}
-               <Courses /> */}
                <Faq />
           </>
      )

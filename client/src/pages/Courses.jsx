@@ -41,7 +41,7 @@ function Courses() {
           {courses.map((course) => (
             <div key={course._id} course={course} className="card">
               <div className="card-poster">
-                <img loading="lazy" src={course.image} alt={course.name} />
+                <Link to={`/course/${course._id}`}><img loading="lazy" src={course.image} alt={course.name} /></Link>
                 <Link to={`/course/${course._id}`}>{course.title}</Link>
                 <div className="rating">
                   <ul className="stars">
