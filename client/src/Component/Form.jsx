@@ -12,6 +12,7 @@ const Form = ({
   showEmail,
   showPassword,
   showConfirmPassword,
+  action,
   onSubmit,
   register,
   errors,
